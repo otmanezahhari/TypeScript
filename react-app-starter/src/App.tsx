@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './App.css';
-import { Array, ChildTypes, Hello, PersonObject, ReactChildTypes, Status } from './components';
+import { Array, Button, ChildTypes, Hello, Input, PersonObject, ReactChildTypes, Status } from './components';
 
 function App() {
   const PersonName = {
@@ -29,6 +29,12 @@ function App() {
       <ReactChildTypes>
         <ChildTypes>Hello from React child types</ChildTypes>
       </ReactChildTypes>
+      <Button  handleClick ={(event)=>{
+        console.log('ok', event)
+      }} />
+      <Input value = 'ok'  handleChange = {(event)=>{
+        console.log('ok' , event)
+      }} />
     </div>
   );
 }
